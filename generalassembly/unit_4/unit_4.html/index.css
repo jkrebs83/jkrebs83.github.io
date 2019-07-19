@@ -12,20 +12,20 @@
   src: url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
 }
-     <style>
-	@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
-	</style>
+   <style>
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+</style>
 
       
 
 h1, h2, nav a {
-	font-family: 'archer_bold_pro.otf', serif;
+	font-family: 'archer_bold_pro.otf',serif;
 	}
 
 
 body, h6 {
-	font-family: 'Libre Franklin', sans-serif;
-	font-size: 16px;
+	font-family: 'Rokkitt',serif;
+	font-size: 6;
 	color: #2c4001;
 	line-height: 1.5em;
 	width: 45em;
