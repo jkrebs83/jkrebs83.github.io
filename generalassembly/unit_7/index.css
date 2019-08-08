@@ -33,16 +33,25 @@ body {
 	clear:both;
 
 }
-.five-columns .column {
-	width:20%;
-	float:left;
-	padding:1.5em;
-	
-}
+
 
 .center {text-align:center;
 
 }
+
+.container {
+	width:100%;
+	max-width:1024px;
+	margin: 0 auto;
+	padding:10px;
+
+}
+
+.container-mini {
+	max-width:768px;
+
+}
+
 
 p {
 	font-family:'Rokkitt',serif;
@@ -73,6 +82,10 @@ h2 {
 	font-size:2em;
 }
 
+
+h3 {
+	font-size:1.5em;
+}
 
 header nav a {
 	text-transform:uppercase;
@@ -150,52 +163,81 @@ img {
 }
 
 #bio {
-max-width:100em;
 width:100%;
-margin:0 auto;
-padding:10px;
-
+background-color:yellow;
+margin-top:10px;
 
 }
 
-#bio figcaption {
 
-	width:66.66%;
+#bio .container figcaption {
+
+	width:56.66%;
 	float:left;
 	padding:10px;
-	background-color: lightblue;
+	
+
 
 }
 
-	#bio figure {
-		width:33.33%;
+	#bio .container figure {
+		width:43.33%;
 		float:left;
-		background-color:red;
+		padding-right:40px;
+		
 
 }
 
+#contact .container {
+background-color:yellow;
+margin:20px
+padding:20px;
+width:100%;
+
+}
 
 #services { 
-max-width:50em;
 width:100%;
-margin:0 auto;
-padding:10px;
 background-color:pink;
-font-family:'Rockkitt',serif;
-font-size:1em;
 
  }
 
 #listofservices{
- 	float:left;
  	background-color:yellow;
  	padding:10px;
  }
 
- #listofsevices img {
-	max-width:100px;
+#listofservices .row figure {
+	width:40%;
 	display:block;
 }
+
+
+#listofservices .container .row:nth-child(even) figure {
+	float:left;
+
+}
+
+#listofservices  .container .row:nth-child(odd) figure {
+	float:right;
+}
+
+#listofservices  .container .row:nth-child(even) figcaption{
+	float:right;
+}
+
+#listofservices .container.row:nth-child(odd) figcaption {
+float:left;
+}
+
+
+#listofservices .container .row figcaption {
+	width: 60%;
+	display:block;
+}
+
+
+
 .clearfix:after {
 	visibility:hidden;
 	height:0;
@@ -206,13 +248,9 @@ font-size:1em;
 	}
 
 #contact { 
-max-width:50em;
-width:100%;
-margin:0 auto;
-padding:10px;
 background-color:pink;
 font-family:"archer bold", serif;
-font-size:1.1em;
+font-size:1em;
 
 }
 
@@ -229,10 +267,7 @@ nav .column:last-child {
 } 
 
 #blog{
-		margin:20px;
-		padding:10, 10px;
 		background-color:pink;
-		float:left;
 
 }
 
