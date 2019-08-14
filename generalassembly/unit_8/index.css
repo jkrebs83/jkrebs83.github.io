@@ -43,7 +43,7 @@ body {
 	width:100%;
 	max-width:1024px;
 	margin: 0 auto;
-	padding:10px;
+	padding:1em;
 
 }
 
@@ -64,7 +64,7 @@ h1, h2, nav a {
 	}
 
 header {
-	padding:20px; 
+	padding:1.5em; 
 	display:flex;
 	align-items:center;
 	justify-content: space-between;
@@ -74,7 +74,7 @@ header {
 #logo_container {
 	width:100%;
 	max-width:180px;
-	
+
 }
 
 
@@ -90,8 +90,8 @@ h3 {
 header nav a {
 	text-transform:uppercase;
 	font-size:1.2em;
-	letter-spacing:2px;
-	padding: 0 10px;
+	letter-spacing:.33em;
+	padding: 0 .5em;
 	display:block;
 	float:left;
 	color:#0A4001;
@@ -104,7 +104,7 @@ header nav a:hover {
 
 	.socialbutton	{
 		display:block;
-		width:30px;
+		width:1.5em;
 		padding:0;
 
 	}
@@ -117,7 +117,7 @@ header nav a:hover {
 a {
 	color:#0A4001;
 	font-size:1em;
-	letter-spacing:2px;
+	letter-spacing:.25em;
 	text-decoration: none; 
 }
 
@@ -149,7 +149,7 @@ position:relative;
 
 #box h2 {
 	color:#fff;
-	padding:60px;
+	padding:1em;
 	max-width:600px;
 	line-height:1.15em;	
 	width:100%;
@@ -164,26 +164,27 @@ img {
 
 #bio {
 width:100%;
-background-color:yellow;
-margin-top:10px;
+background-color:#2DA657;
+margin-top:.5em;
 
 }
 
 
 #bio .container figcaption {
 
-	width:56.66%;
+	width:55%;
 	float:left;
-	padding:10px;
+	padding:2em;
+	background-color: #D9D3C1;
 	
 
 
 }
 
 	#bio .container figure {
-		width:43.33%;
+		width:45%;
 		float:left;
-		padding-right:40px;
+		padding-right:2em;
 		
 
 }
@@ -191,13 +192,13 @@ margin-top:10px;
 
 #services { 
 width:100%;
-background-color:pink;
+background-color:#A3D37A;
 
  }
 
 #listofservices{
- 	background-color:yellow;
- 	padding:10px;
+ 	background-color:#DFEDD1;
+ 	padding:.5em;
  }
 
 #listofservices .row figure {
@@ -215,7 +216,7 @@ background-color:pink;
 	float:right;
 }
 
-#listofservices  .container .row:nth-child(even) figcaption{
+#listofservices  .container .row:nth-child(even) figcaption {
 	float:right;
 }
 
@@ -239,9 +240,7 @@ float:left;
 	}
 
 #contact { 
-background-color:green;
-font-family:"archer bold", serif;
-font-size:1em;
+background-color:#2DA657;
 width:100%;
 }
 
@@ -249,12 +248,12 @@ width:100%;
 	margin-bottom: 1em;
 	border-bottom: .25em black;
 	padding-bottom:.5em;
-	background-color:magenta;
+	background-color:#DFEDD1;
 }
 
 
 #contact .container {
-background-color:yellow;
+background-color:#DFEDD1;
 margin:2em;
 padding:2em;
 width:100%;
@@ -265,7 +264,7 @@ width:100%;
 	width:100%;
 	max-width:1024px;
 	margin: 0 auto;
-	padding:10px;
+	padding:.5em;
 
 }
 
@@ -274,7 +273,7 @@ nav .column:last-child {
 } 
 
 #blog{
-		background-color:pink;
+		background-color:#DFEDD1;
 
 }
 
@@ -288,7 +287,7 @@ nav .column:last-child {
 	}
 
 footer {
-	font-size:20px;
+	font-size:1.25em;
 
 }
 
@@ -302,4 +301,55 @@ footer .column:last-child {
 
 }
 
+@media only screen and (max:width:800px) {
+	nav a {
+		foat:none;
+		width:auto;
+		font-size: 1em;
+	}	
 
+ h2 {
+ 	font-size: 1.2em;
+}
+#boxh2 {
+	padding:.5em;
+	}
+	#logocontainer {
+		max-width:120px;
+		padding:.5em;
+		
+	}
+footer {
+	font-size:1em;
+	}
+}
+
+@media (max-width: 400px) {
+  nav a {
+   display: block;
+   text-align: center;
+   font-size:.8em;
+  }
+
+  #logocontainer {
+  	align-items: center;
+
+  }
+
+h2 {
+	max-width: 80px;
+	font-size: 1em;
+	line-height: 1em;
+	padding:.5em;
+}
+
+#boxh2 {
+	max-width: 80px;
+}
+p {
+	font-size:.75em;
+}
+footer {
+	font-size: .8em;
+	}
+}
