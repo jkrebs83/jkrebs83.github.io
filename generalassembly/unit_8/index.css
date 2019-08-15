@@ -14,17 +14,26 @@ body {
 	line-height:1.5em;
 	font-size:16px;
 }
-.four-columns .column {
-	width:25%;
-	float:left;
-	padding:1em;
-
-}
 
 .two-columns .column {
 	width:50%;
 	float:left;
 	font-size:1em;
+}
+
+.three-columns .column{
+	width: 32%;
+	float:left;
+	padding: 1em;
+	margin: .25em .25em;
+}
+
+
+.four-columns .column {
+	width:25%;
+	float:left;
+	padding:1em;
+
 }
 
 .clearthefloat:after{
@@ -52,6 +61,10 @@ body {
 
 }
 
+.container-mid {
+	max-width: 968px;
+
+}
 
 p {
 	font-family:'Rokkitt',serif;
@@ -101,6 +114,9 @@ header nav a:hover {
 	color:#6EBF34;
 }
 
+nav .column:last-child {
+	text-align:right;
+} 
 
 	.socialbutton	{
 		display:block;
@@ -196,48 +212,43 @@ background-color:#A3D37A;
 
  }
 
-#listofservices{
+#listofservices {
  	background-color:#DFEDD1;
  	padding:.5em;
  }
 
 #listofservices .row figure {
 	width:40%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+#listofservices .row figcaption {
+	width:58%;
 	display:block;
 }
 
-
-#listofservices .container .row:nth-child(even) figure {
-	float:left;
-
-}
-
-#listofservices  .container .row:nth-child(odd) figure {
-	float:right;
-}
-
-#listofservices  .container .row:nth-child(even) figcaption {
-	float:right;
-}
-
-#listofservices .container.row:nth-child(odd) figcaption {
-float:left;
-}
-
-
-#listofservices .container .row:nth-child(even) figcaption {
-float:left;
-
-}
-
-.clearfix:after {
-	visibility:hidden;
-	height:0;
-	font-size:0;
-	content:"";
+#listofservices .row figure img {
+	width:200px;	
 	display:block;
-	clear:both;
-	}
+}
+
+#listofservices .container .row:nth-child(even){
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+
+}
+
+#listofservices  .container .row:nth-child(odd){
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content:space-between;
+	align-items: center;
+
+}
+
 
 #contact { 
 background-color:#2DA657;
@@ -246,7 +257,7 @@ width:100%;
 
 #contact article {
 	margin-bottom: 1em;
-	border-bottom: .25em black;
+	border-bottom: .25em;
 	padding-bottom:.5em;
 	background-color:#DFEDD1;
 }
@@ -256,36 +267,20 @@ width:100%;
 background-color:#DFEDD1;
 margin:2em;
 padding:2em;
-width:100%;
-
 }
 
-#contact .container {
-	width:100%;
-	max-width:1024px;
-	margin: 0 auto;
-	padding:.5em;
-
-}
-
-nav .column:last-child {
-	text-align:right;
-} 
 
 #blog{
 		background-color:#DFEDD1;
 
 }
 
-.clearfix:after {
-	visibility:hidden;
-	height:0;
-	font-size:0;
-	content:"";
-	display:block;
-	clear:both;
-	}
 
+#blog h3 {
+	font:bold;
+
+
+}
 footer {
 	font-size:1.25em;
 
@@ -301,55 +296,136 @@ footer .column:last-child {
 
 }
 
-@media only screen and (max:width:800px) {
-	nav a {
-		foat:none;
-		width:auto;
+@media only screen and (max-width:945px) {
+	header nav a {
+		float:none;
+		width:100%;
+		display:block;
 		font-size: 1em;
 	}	
 
- h2 {
- 	font-size: 1.2em;
-}
-#boxh2 {
-	padding:.5em;
+	header nav .socialbutton {
+		display:inline-block;
+		width: 30px;
 	}
+
+	#box h2 {
+	font-size:3.8em;
+	padding:.25em
+	line-height:1.2em;
+	}
+
 	#logocontainer {
 		max-width:120px;
 		padding:.5em;
 		
 	}
-footer {
+	footer {
 	font-size:1em;
 	}
+
+	h3	{
+		font-size:1.2em;
+	}
+	p 	{
+		font-size:.9em;
+	}
+
 }
 
+
 @media (max-width: 400px) {
-  nav a {
-   display: block;
+ header nav a {
+  		float:none;
+		width:100%;
+		display:block;
+		font-size: .8em;
    text-align: center;
-   font-size:.8em;
   }
 
-  #logocontainer {
-  	align-items: center;
+  header nav .socialbutton {
+		display:inline-block;
+		width: 24px;
+	}
 
-  }
+#box h2 {
+	font-size:2em;
+	}
 
-h2 {
-	max-width: 80px;
-	font-size: 1em;
-	line-height: 1em;
+#logocontainer {
+		max-width:100px;
+		padding:.25em;
+		
+	}
+#box h2 {
+	font-size:1.5em;
+	padding:.25em;
+}
+
+#bio .container figcaption {
+
+	width:85%;
+	float:none;
+	margin:.5em .5em;
+	padding:1em;
+	background-color: #D9D3C1;
+	
+}
+
+	#bio .container figure {
+		width:100%;
+		float:none;
+		padding:1.5em;
+
+}
+
+#listofservices .row figure {
+	width:100%;
+		float:none;
+		padding:1.5em;
+}
+#listofservices .row figcaption {
+	width:100%;
+	float:none;
+	margin:.5em .5em;
 	padding:.5em;
 }
 
-#boxh2 {
-	max-width: 80px;
+#listofservices .row figure img {
+	width:140px;
+	padding:.5em;	
+	display:block;
 }
-p {
-	font-size:.75em;
+
+body {
+	font-size:14px;
+	line-height:1.2em;
 }
 footer {
-	font-size: .8em;
+	font-size: .7em;
 	}
+
+
+#contact article {
+	margin-bottom: .5em;
+	border-bottom: .25em;
+	padding-bottom:.25em;
+	
+}
+
+
+#contact .container {
+margin:.5em;
+padding:1em;
+}
+
+
+#blog .container {
+	max-width:400px;
+	float:none;
+	justify-content: center;
+	margin:.5em .5em;
+	padding: 1em;
+
+	}	
 }
