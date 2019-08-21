@@ -7,7 +7,7 @@
 }
 body {
 	font-family: 'Rokkitt', serif;
-	color: #222222
+	color: #222222;
 	line-height: 1.5em;
 	font-size: 16px;
 }
@@ -17,9 +17,9 @@ body {
 	font-size: 1em;
 }
 .three-columns .column {
+	width:33.33%;
 	float: left;
 	padding: 1em;
-	margin: .5em;
 }
 .four-columns .column {
 	width: 25%;
@@ -45,11 +45,22 @@ body {
 }
 .container-mid {
 	max-width: 968px;
+
+}
+
+.container-max {
+	max-width:1200px;
 }
 p {
 	font-family: 'Rokkitt', serif;
 	margin-bottom: .5em;
 }
+
+small {
+		margin-top:1em;
+		display:block;
+	}
+
 h1, h2, nav a {
 	font-family: "Bree serif", serif;
 }
@@ -96,7 +107,6 @@ nav .column:last-child {
 a {
 	color: #0A4001;
 	font-size: 1em;
-	letter-spacing: .25em;
 	text-decoration: none;
 }
 #box {
@@ -160,18 +170,21 @@ img {
 	padding: .5em;
 }
 #listofservices .row figure {
-	width: 40%;
+	width: 20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 #listofservices .row figcaption {
-	width: 58%;
+	width: 80%;
 	display: block;
+	padding:1em;
 }
-#listofservices .row figure img {
-	width: 200px;
-	display: block;
+	#listofservices .container .row {
+		padding-top:1em;
+		padding-bottom:1em;
+	}
+
 }
 #listofservices .container .row:nth-child(even) {
 	display: flex;
@@ -200,19 +213,34 @@ img {
 	padding: 2em;
 }
 #blog {
-	background-color: #DFEDD1;
+	background-color:#dfedd1;
 }
 #blog h3 {
 	font: bold;
 }
-#blog .comtainer .column .news {
+#blog .news {
 	width: 20%;
+	float:left;
+	padding:1em;
+	background-color:lightgreen;
+	border-right: 1px solid black;
+	margin-top: 4em;
 }
-#blog .container .column .blog {
+#blog .blog {
 	width: 60%;
+	float:left;
+	padding:1em;
 }
-#blog .container.column .history {
+#blog .img { 
+ }
+
+#blog .history {
 	width: 20%;
+	float:left;
+	padding:1em;
+	background-color:lightgreen;
+	margin-top: 4em;
+}
 }
 footer {
 	font-size: 1.25em;
@@ -236,7 +264,7 @@ footer .column:last-child {
 	}
 	#box h2 {
 		font-size: 3.8em;
-		padding: .25em line-height:1.2em;
+		padding: .25em; line-height:1.2em;
 	}
 	#logocontainer {
 		max-width: 120px;
@@ -251,6 +279,59 @@ footer .column:last-child {
 	p {
 		font-size: .9em;
 	}
+	#blog {
+
+	}
+	#blog .news {
+	width:100%;
+	float:none;
+	max-width:700px;
+	margin:4em auto;
+	padding:1em;
+	background-color:lightgreen;
+	border-right:none
+	margin-top: 4em;
+	margin-bottom:4em;
+}
+
+#blog .blog {
+	width:100%;
+	float:none;
+	max-width:700px;
+	margin:0 auto;
+	padding:1em;
+	margin-bottom:4em;
+}
+
+#blog .history {
+	width:100%;
+	float:none;
+	max-width:700px;
+	margin:0 auto;
+	padding:1em;
+	background-color:lightgreen;
+	margin-top: 4em;
+}
+
+#blog .history a {
+	display:block;
+	padding-bottom:.33em;
+
+}
+
+@media (max-width: 600px) {
+	#box h2 {
+		font-size: 2.5em;
+	}
+
+#listofservices .row figure {
+	width:20%;
+}
+
+#listofservices .row figcaption {
+	width:80%;
+	padding:1em;
+
 }
 @media (max-width: 400px) {
 	header nav a {
@@ -287,22 +368,8 @@ footer .column:last-child {
 		float: none;
 		padding: 1.5em;
 	}
-	#listofservices .row figure {
-		width: 100%;
-		float: none;
-		padding: 1.5em;
-	}
-	#listofservices .row figcaption {
-		width: 100%;
-		float: none;
-		margin: .5em .5em;
-		padding: .5em;
-	}
-	#listofservices .row figure img {
-		width: 140px;
-		padding: .5em;
-		display: block;
-	}
+
+	
 	body {
 		font-size: 14px;
 		line-height: 1.2em;
@@ -310,6 +377,7 @@ footer .column:last-child {
 	footer {
 		font-size: .7em;
 	}
+
 
 	 #contact article {
 	margin-bottom: .5em;
