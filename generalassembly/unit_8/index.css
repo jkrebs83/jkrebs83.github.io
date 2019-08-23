@@ -47,7 +47,6 @@ body {
 	max-width: 968px;
 
 }
-
 .container-max {
 	max-width:1200px;
 }
@@ -109,6 +108,7 @@ a {
 	font-size: 1em;
 	text-decoration: none;
 }
+
 #box {
 	background-image: url(images/melon_salad.jpg);
 	background-size: cover;
@@ -201,16 +201,17 @@ img {
 	background-color: #2DA657;
 	width: 100%;
 }
-#contact article {
+#contact-form {
 	margin-bottom: 1em;
 	border-bottom: .25em;
 	padding-bottom: .5em;
-	background-color: #DFEDD1;
 }
+
 #contact .container {
 	background-color: #DFEDD1;
 	margin: 2em;
 	padding: 2em;
+	margin:0 auto;
 }
 #blog {
 	background-color:#dfedd1;
@@ -376,17 +377,6 @@ footer .column:last-child {
 	}
 	footer {
 		font-size: .7em;
-	}
-
-
-	 #contact article {
-	margin-bottom: .5em;
-	border-bottom: .25em;
-	padding-bottom: .25em;
-	}
-	#contact .container {
-	margin: .5em;
-	padding: 1em;
 	}
 
 	#blog .container {

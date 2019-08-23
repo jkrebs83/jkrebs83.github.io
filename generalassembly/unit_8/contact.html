@@ -5,6 +5,21 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("<user_JrciMaFV6bqbWWXzLI5WF>");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_template', this);
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -66,46 +81,24 @@
 
 <h3 class="left">Contact<h3>
 
-<article>
-
 <p class="left">
 <p>I am available for personal chef services, cooking classes, and event catering. Send me a message below. I look forward to working with you! </p>
 
-</article>
-
-<article>
-
-<h4>Name</h4>
-
-</article>
-
-<article>
-
-<h4> Email Address </h4>
-
-</article>
-
-<article>
-
-<h4> Telephone Number</h4>
-
-</article>
-
-<article>
-
-<h4> Subject </h4>
-
-</article>
-
-<article>
-<h4>Message </h4>
-
-</article>
-
-
+ <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="contact"></textarea>
+        <input type="submit" value="Send">
+ </form>
+	<figure>
+		<img alt="cheesecake at a party " src="images/chzcake.jpg" title="cheesecake at a party">
+	</figure>
 </section>
-</div>
-
+ 	</div>
 <footer> 
 	<div class="container clearthefloat four-columns">
 
