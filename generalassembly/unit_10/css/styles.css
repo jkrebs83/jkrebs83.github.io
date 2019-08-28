@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans&display=swap');
+
+/* CSS Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* UNIVERSAL Styles */
+body {
+	font-family: 'Open Sans', serif;
+	color: #222222;
+	font-size: 18px;
+}
+
+p,
+ul li,
+ol li {
+	font-size: 1.05rem;
+	line-height: 1.5;
+	margin-bottom: .5em;
+}
+
+li,
+ol {
+	list-style-position: inside;
+}
+
+small {
+	font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Bree Serif", serif;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 2rem;
+	margin-bottom: 0.5em;
+}
+
+h4 {
+	font-size: 1.75rem;
+	margin-bottom: 0.5em;
+}
+
+h4 + ul,
+h4 + ol {
+	margin-top: 0.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+a {
+	color: #0A4001;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6EBF34;
+}
+
+a:hover svg {
+	fill: #6EBF34;
+}
+
+img,
+svg {
+	width: 100%;
+	display: block;
+}
+
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.container-mini {
+	max-width: 768px;
+}
+
+.container-mid {
+	max-width: 968px;
+}
+
+.container-max {
+	max-width: 1200px;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.social-link svg {
+	width: 25px;
+}
+
+/* EQUAL COLUMN Styles */
+.column {
+	padding: 1em;
+	float: left;
+}
+
+.two-columns .column {
+	width: 50%;
+}
+
+.three-columns .column {
+	width: 33.3333%;
+}
+
+.four-columns .column {
+	width: 25%;
+}
+
+/* HEADER Styles */
+#header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#logo {
+	width: 100%;
+	max-width: 160px;
+}
+
+#logo span {
+	display: none;
+	text-indent: -9999em;
+}
+
+/* NAV Styles */
+.nav a {
+	text-transform: uppercase;
+	font-size: 1.05rem;
+	letter-spacing: .10em;
+	margin-left: 2em;
+	display: block;
+	padding-bottom: 0.25em;
+	float: left;
+	color: #0A4001;
+	font-family: "Bree serif", serif;
+}
+
+.nav .active {
+	border-bottom: 2px solid #6EBF34;
+}
+
+/* Hero Styles */
+#hero {
+	background-image: url(../images/ella-olsson-C1Q3qOTlegg-unsplash.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 40vw;
+	min-height: 400px;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+#hero:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(10, 64, 1, 0.45);
+	z-index: 1;
+}
+
+#hero h2 {
+	color: #DFEDD1;
+	padding: 0.5em;
+	width: 100%;
+	max-width: 768px;
+	line-height: 1.2;
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+	letter-spacing: 0.25rem;
+	text-align: center;
+}
+
+/* SERVICES Styles */
+#services .row {
+	padding: 2em 0;
+}
+
+#services .row figure {
+	width: 20%;
+	display: flex;
+}
+
+#services .row figcaption {
+	width: 80%;
+	display: block;
+}
+
+#services .row:nth-child(odd) figcaption {
+	padding-left: 2rem;
+}
+
+#services .row:nth-child(even) figcaption {
+	padding-right: 2rem;
+}
+
+#services .row:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#services .row:nth-child(even) .container {
+	display: flex;
+	align-items: flex-start;
+}
+
+#services .row:nth-child(odd) .container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+}
+
+
+/* KITCHEN + ABOUT Styles */
+#kitchen,
+#about  {
+	padding-top: 2em;
+}
+
+.post,
+.jillian {
+	width: 66.6666%;
+	padding-right: 2em;
+	float: left;
+}
+
+.post-header {
+	margin-bottom: 1em;
+}
+
+.post-header small {
+	line-height: 1;
+	opacity: 0.5;
+	display: block;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+
+.post article {
+	margin-bottom: 2em;
+}
+
+.post figure,
+.jillian figure {
+	margin-bottom: 1em;
+}
+
+.sidebar {
+	width: 33.3333%;
+	float: left;
+	padding: 1em;
+	background-color: #f2f2f2;
+	position: sticky;
+	top: 0;
+}
+
+.sidebar .social-buttons,
+.sidebar .contact {
+	margin-top: 2em;
+}
+
+.sidebar .contact a {
+	display: block;
+	margin-top: 0.25rem;
+	letter-spacing: 0.05rem;
+}
+
+/* SOCIAL Button */
+.social-button {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	border-radius: 50%;
+	margin-right: 0.5em;
+	border: 2px solid #0A4001;
+}
+
+.social-button svg {
+	fill: #0A4001;
+}
+
+/* FOOTER Styles */
+#footer {
+	border-top: #f2f2f2 1px solid;
+	font-size: 1.25rem;
+}
+
+#footer .column:last-child {
+	text-align: right;
+}
+
+#footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#footer small {
+	opacity: 0.5;
+}
+
+#footer .nav a {
+	margin-left: 0;
+	margin-right: 2em;
+}
+
+@media (max-width:1000px) {
+	.post,
+	.jillian,
+	.post-header,
+	.jillian-header {
+		width: 100%;
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0;
+		float: none;
+	}
+
+	.sidebar {
+		width:100%;
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		padding: 1em;
+		position: relative;
+		margin-bottom: 2em;
+	}
+
+	#services .row:nth-child(odd) .container,
+	#services .row:nth-child(even) .container {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+	#services .row:nth-child(odd) .container figure,
+	#services .row:nth-child(even) .container figure {
+		margin-top: 1em;
+		width: 100%;
+		max-width: 200px;
+	}
+
+	#services .row figcaption {
+		width: 100%;
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#services .row:nth-child(odd) figcaption {
+		padding-left: 0;
+	}
+
+	#services .row:nth-child(even) figcaption {
+		padding-right: 0;
+	}
+}
+
+
+@media (max-width: 640px){
+	#header .container {
+		flex-direction: column;
+	}
+
+	#header nav {
+		margin-top: 2em;
+	}
+
+	#footer .container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#footer .nav {
+		margin-bottom: 1em;
+	}
+
+	#footer .nav a:last-child {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 460px){
+	#hero h2 {
+		font-size: 1.5rem;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav a {
+		display: inline-block;
+		text-align: center;
+		margin-left: 0;
+		margin-bottom: 1em;
+	}
+	#footer .nav a {
+		margin-right: 0;
+	}
+}
